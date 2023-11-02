@@ -19,15 +19,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.2</version> <!-- You can specify the version you want to use -->
+                <version>3.2.2</version>
                 <configuration>
                     <archive>
                         <manifest>
-                            <!-- Specify your custom attributes here -->
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                             <mainClass>uk.jamieisgeek.Main</mainClass>
-                            <!-- Add any other manifest attributes you need -->
                         </manifest>
                     </archive>
                 </configuration>
@@ -58,12 +56,6 @@
                 </executions>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
     </build>
 
     <dependencies>
